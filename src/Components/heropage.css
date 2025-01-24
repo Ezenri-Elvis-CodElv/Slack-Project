@@ -1,0 +1,279 @@
+main{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3%;
+
+    /* padding-left: 5%; */
+    /* background-color:#541554; */
+}
+
+.slackvideo{
+    width: 75%;
+    height: 75%;
+}
+.work {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    
+    & h1{
+        font-size: 40px;
+        font-family: sans-serif;
+    }
+}
+.made{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.worker{
+    display: flex;
+    gap: 10px;
+}
+.workbtn{
+    width: 220px;
+    height: 60px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color:#541554;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+
+
+.buttt{
+    width: 220px;
+    height: 60px;
+    border: 2px solid #7a537a;
+    border-radius: 5px;
+    color: #541554;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+.buttt:hover{
+    transition: 350ms;
+    cursor: pointer;
+}
+
+
+.make{
+    width: 100%;
+    height: 70%;
+    /* background-color: white; */
+}
+.built{
+    width: 100%;
+    height: 35%;
+    /* background-color: aqua; */
+}
+.built h1{
+    font-size: 60px;
+    color: white;
+}
+.built h2{
+    font-size: 50px;
+    color: #ecb22e;
+}
+.connect{
+    width: 100%;
+    height: 20%;
+    line-height: 30px;
+    /* background-color: aqua; */
+}
+.connect p{
+    font-size: large;
+    color: white;
+    font-weight: bold;
+}
+.mailbutt{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    /* background-color: aqua; */
+}
+.vik{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+
+}
+.like{
+    width: 100%;
+    height: 10%;
+}
+.vik div{
+    width: 40%;
+    height: 70%;
+}
+.vik div button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 2px;
+    background-color: white;
+    font-size: large;
+    cursor: pointer;
+    transition: border 0.1s;
+    font-weight: bold;
+    color: #541554;
+}
+.vik button:hover{
+    border: 2px solid #541554;
+}
+.google{
+    width: 40%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: lightskyblue;
+}
+.aaa{
+    width: 20%;
+    height: 90%;
+    background-color: white;
+}
+.aaa img{
+    width: 100%;
+    height: 100%;
+    object-fit: inherit;
+}
+.bb{
+    width: 75%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bb span{
+    font-size: small;
+    font-weight: bold;
+    color: white;
+}
+.mailbutt p{
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+.vid{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: yellow; */
+}
+.vidhold{
+    width: 100%;
+    height: 80%;
+    background-color: white;
+}
+.vivid{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+
+@media screen and (max-width: 1230px){
+    .built{
+        width: 100%;
+    }
+    .make{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .vik{
+        height: max-content;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .vik div{
+        width: 100%;
+        height: 50px;
+    }
+    .mailbutt{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .aaa{
+        width: 10%;
+    }
+    .bb{
+        width: 88%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main{
+        flex-direction: column;
+        padding-right: 5%;
+        gap: 25px;
+        height: max-content;
+    }
+    .like{
+        display: none;
+    }
+    .made{
+        width: 100%;
+    }
+    .built, .connect{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .vid{
+        width: 100%;
+    }
+    .aaa {
+        width: 5%;
+    }
+    .bb{
+        width: 94%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .aaa{
+        width: 10%;
+    }
+    .built{
+        width: 100%;
+        margin-left: 5%;
+        /* flex-wrap: wrap; */
+    }
+    .built h2{
+        padding-left: 5%;
+    }
+}

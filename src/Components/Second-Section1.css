@@ -1,0 +1,122 @@
+.second-section1-container {
+    width: 100%;
+    height: max-content;
+    margin-top: 30px;
+  }
+  
+  .first-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+  
+  .video-holder {
+    /* width: 300px; */
+    width: 50%;
+    max-height: 430px;
+    /* background-color: rebeccapurple; */
+  }
+  
+  video {
+    height: 100%;
+    width: 100%;
+    /* object-fit: fit; */
+  }
+  
+  .text-holder {
+    width: 50%;
+    /* background-color: green; */
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  #text-holder-section3 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .text-holder-container {
+    height: auto;
+    max-width: 550px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .head-title {
+    font-size: 3.125rem;
+    /* max-width: 600px; */
+  }
+  
+  .description-text {
+    font-weight: 600;
+    line-height: 1.4444;
+    /* letter-spacing: 0.5px; */
+    font-size: 1.125rem;
+    /* max-width: 550px; */
+    /* margin-bottom: 1rem; */
+  }
+  
+  .my-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .my-link::after {
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M1%206a.5.5%200%200%200%200%201V6zM12.854.646a.5.5%200%200%200-.708.708l.708-.708zM18%206.5l.354.354a.5.5%200%200%200%200-.708L18%206.5zm-5.854%205.146a.5.5%200%200%200%20.708.708l-.708-.708zM1%207h16.5V6H1v1zm16.646-.854l-5.5%205.5.708.708%205.5-5.5-.708-.708zm-5.5-4.792l2.75%202.75.708-.708-2.75-2.75-.708.708zm2.75%202.75l2.75%202.75.708-.708-2.75-2.75-.708.708z%22%20fill%3D%22%231264A3%22%2F%3E%3C%2Fsvg%3E);
+    content: "";
+    width: 19px;
+    height: 13px;
+    display: inline-block;
+    margin-left: 0.5em;
+  }
+  
+  @media screen and (width <= 1023px) {
+    .first-div {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      /* align-items: center; */
+    }
+    #first-div2 {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 10px;
+    }
+    .video-holder {
+      width: 100%;
+    }
+    video {
+      max-width: 687px;
+      max-height: 400px;
+    }
+    .text-holder {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .head-title {
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (width <= 767px) {
+    video {
+      max-width: 400px;
+      /* max-height: 400px; */
+      height: 100%;
+      object-fit: fill;
+    }
+  
+    .text-holder {
+      display: flex;
+      justify-content: flex-start;
+      padding-inline-start: 10px;
+    }
+  }

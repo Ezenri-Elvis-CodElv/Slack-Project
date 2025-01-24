@@ -1,0 +1,38 @@
+.section1-container{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section1-text-container{
+    min-height: 100px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.section1-image-container{
+    min-height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.section1-images{
+    min-width: 80px;
+    max-height: 80px;
+    margin: 0px 30px;
+    margin-bottom: 10px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
